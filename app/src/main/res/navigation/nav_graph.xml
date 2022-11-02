@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="ni.edu.uca.carlosfernasndo.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/acMenuNombres"
+            app:destination="@id/nombres" />
+        <action
+            android:id="@+id/acMenuCubo"
+            app:destination="@id/cubo" />
+        <action
+            android:id="@+id/acMenuModa"
+            app:destination="@id/moda" />
+    </fragment>
+    <fragment
+        android:id="@+id/nombres"
+        android:name="ni.edu.uca.carlosfernasndo.nombres"
+        android:label="fragment_nombres"
+        tools:layout="@layout/fragment_nombres" />
+    <fragment
+        android:id="@+id/cubo"
+        android:name="ni.edu.uca.carlosfernasndo.Cubo"
+        android:label="fragment_cubo"
+        tools:layout="@layout/fragment_cubo" />
+    <fragment
+        android:id="@+id/moda"
+        android:name="ni.edu.uca.carlosfernasndo.Moda"
+        android:label="fragment_moda"
+        tools:layout="@layout/fragment_moda" />
+</navigation>
